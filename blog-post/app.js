@@ -18,4 +18,12 @@ app.get( '/', ( req, res ) => {
 	res.render('home', {homeStartingContent: homeStartingContent})
 } );
 
+app.get( '/contact', ( req, res ) => {
+	res.render('contact', {contactContent: contactContent})
+} )
+
+app.get( '/about', ( req, res ) => {
+	res.render('about', {aboutContent: aboutContent})
+})
+
 app.listen(3000, () => console.log('Server running on port 3000s'))
